@@ -7,11 +7,18 @@ public class CrewMember {
 	private String assignment;
 	
 	public CrewMember(String nm, String pos, String rk, String spe, String assign) {
-		
+		this.name = nm;
+		this.position = pos;
+		this.rank = rk;
+		this.species = spe;
+		this.assignment = assign;
 	}
 	
-	public CrewMember(String nm, String pos, String rk, String ape) {
-		
+	public CrewMember(String nm, String pos, String rk, String spe) {
+		this.name = nm;
+		this.position = pos;
+		this.rank = rk;
+		this.species = spe;
 	}
 	
 	public String toString() {
