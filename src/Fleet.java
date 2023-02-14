@@ -13,7 +13,10 @@ public class Fleet {
 	}
 	
 	public String toString() {
-		String outStr = "Hello";
+		String outStr = "----------------------------\n" + this.name + "\n----------------------------";
+		for(int i = 0; i < fleet.size(); ++i) {
+			outStr += "\n" + fleet.get(i).toString();
+		}
 		return outStr;
 	}
 	
@@ -41,14 +44,12 @@ public class Fleet {
 			System.out.println(filenames[i]);
 			try {
 				Scanner read = new Scanner(new File(dirName + "/" + filenames[i]));
+				int n = 0;
 				while(read.hasNextLine()) {
 					lineIn = read.nextLine();
 					tokens = lineIn.split(",");
-					parseData(tokens, i);
-					for(int j = 0; j < tokens.length; ++j) {
-						System.out.println(tokens[j]);
-					}
-					System.out.println("");
+					parseData(tokens, n);
+					++n;
 				}
 				read.close();
 			}
@@ -63,16 +64,18 @@ public class Fleet {
 			case 0:
 				Starship tempShip = new Starship(tokens[0], tokens[1], tokens[2]);
 				addStarship(tempShip);
+				System.out.println("New Ship:\n" + tempShip);
 				break;
 			default:
 				if(tokens.length == 4) {
 					CrewMember newCrew = new CrewMember(tokens[0], tokens[1], tokens[2], tokens[3]);
 					fleet.get(fleet.size() - 1).addCrewMember(newCrew);
-					System.out.println();
+					System.out.println("New Crew\n" + newCrew);
 				}
 				else if(tokens.length == 5){
 					CrewMember newCrew = new CrewMember(tokens[0], tokens[1], tokens[2], tokens[3], tokens[4]);
 					fleet.get(fleet.size()).addCrewMember(newCrew);
+					System.out.println("New Crew" + newCrew);
 				}	
 				break;
 		}

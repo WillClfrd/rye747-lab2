@@ -22,7 +22,7 @@ public class CrewMember {
 	}
 	
 	public String toString() {
-		return "hello";
+		return " - " + this.name + " (" + this.rank + ") - " + this.position + "[" + this.species + "]\n";
 	}
 	
 	public String getName() {

@@ -14,7 +14,11 @@ public class Starship {
 	}
 	
 	public String toString() {
-		return "Hello";
+		String outStr = this.name + ", " + this.starshipClass + ". Registry: " + this.registry + "\n" + Crew.size() + " crew members assigned.\n";
+		for(int i = 0; i < Crew.size(); ++i) {
+			outStr += Crew.get(i).toString();
+		}
+		return outStr;//name, class. Registry: registry\nCrew.size() 
 	}
 	
 	public void addCrewMember(CrewMember newCrew) {
