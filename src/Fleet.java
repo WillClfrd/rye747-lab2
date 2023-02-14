@@ -13,7 +13,8 @@ public class Fleet {
 	}
 	
 	public String toString() {
-		return "hello";
+		String outStr = "Hello";
+		return outStr;
 	}
 	
 	public int getSizeOfFleet() {
@@ -34,7 +35,6 @@ public class Fleet {
 		File dataDir = new File(dirName);
 		String[] filenames = dataDir.list();
 		String[] tokens;
-		//Scanner read;
 		String lineIn;
 		
 		for(int i = 0; i < filenames.length; ++i) {
@@ -43,7 +43,6 @@ public class Fleet {
 				Scanner read = new Scanner(new File(dirName + "/" + filenames[i]));
 				while(read.hasNextLine()) {
 					lineIn = read.nextLine();
-					//System.out.println(lineIn);
 					tokens = lineIn.split(",");
 					parseData(tokens, i);
 					for(int j = 0; j < tokens.length; ++j) {
