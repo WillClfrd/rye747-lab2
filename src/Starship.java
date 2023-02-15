@@ -1,4 +1,7 @@
-//Program is working correctly add Javadoc comments and then submit
+/**
+ *This class represents CrewMember objects
+ *each CrewMember object can be instantiated in one of two ways, with a name, a position, a rank, and a species being required, and an assignment being optional
+ */
 import java.util.ArrayList;
 
 public class Starship {
