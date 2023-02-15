@@ -2,6 +2,10 @@
  * This class represents Fleet objects. 
  * Each Fleet object can be instantiated with a name value. 
  * Fleet objects contain an ArrayList of Starship objects. 
+ * 
+ * @author William Clifford (rye747)
+ * UTSA CS 3443 - Lab 2
+ * Spring 2023
  */
 import java.io.File;
 import java.io.FileNotFoundException;

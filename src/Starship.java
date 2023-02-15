@@ -1,7 +1,11 @@
 /**
- *This class represents Starship objects. 
- *Each Starship object can be instantiated with a name, a registry, and a starshipClass. 
- *Starship objects also contain an ArrayList of CrewMember objects. 
+ * This class represents Starship objects. 
+ * Each Starship object can be instantiated with a name, a registry, and a starshipClass. 
+ * Starship objects also contain an ArrayList of CrewMember objects. 
+ * 
+ * @author William Clifford (rye747)
+ * UTSA CS 3443 - Lab 2
+ * Spring 2023
  */
 import java.util.ArrayList;
 

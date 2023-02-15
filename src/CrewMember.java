@@ -1,6 +1,10 @@
 /**
- *This class represents CrewMember objects. 
- *Each CrewMember object can be instantiated in one of two ways, with a name, a position, a rank, and a species being required, and an assignment being optional. 
+ * This class represents CrewMember objects. 
+ * Each CrewMember object can be instantiated in one of two ways, with a name, a position, a rank, and a species being required, and an assignment being optional. 
+ *
+ * @author William Clifford (rye747)
+ * UTSA CS 3443 - Lab 2
+ * Spring 2023
  */
 public class CrewMember {
 	private String name;
