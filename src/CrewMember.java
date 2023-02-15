@@ -1,4 +1,8 @@
 //Program is working correctly add Javadoc comments and then submit
+/**
+ *This class represents CrewMember objects
+ *each CrewMember object can be instantiated in one of two ways, with a name, a position, a rank, and a species being required, and an assignment being optional
+ */
 public class CrewMember {
 	private String name;
 	private String position;
@@ -6,6 +10,15 @@ public class CrewMember {
 	private String species;
 	private String assignment;
 	
+	/**
+	 * Constructs a CrewMember object with a given name, position, rank, species, and assignment
+	 * 
+	 * @param nm the name to be assigned to the object
+	 * @param pos the position to be assigned to the object
+	 * @param rk the rank to be assigned to the object
+	 * @param spe the species to be assigned to the object
+	 * @param assign the assignment to be assigned to the object
+	 */
 	public CrewMember(String nm, String pos, String rk, String spe, String assign) {
 		this.name = nm;
 		this.position = pos;
