@@ -1,6 +1,6 @@
 /**
- *This class represents CrewMember objects
- *each CrewMember object can be instantiated in one of two ways, with a name, a position, a rank, and a species being required, and an assignment being optional
+ *This class represents CrewMember objects. 
+ *Each CrewMember object can be instantiated in one of two ways, with a name, a position, a rank, and a species being required, and an assignment being optional. 
  */
 public class CrewMember {
 	private String name;
@@ -12,11 +12,11 @@ public class CrewMember {
 	/**
 	 * Constructs a CrewMember object with a given name, position, rank, species, and assignment
 	 * 
-	 * @param nm the name to be assigned to the object
-	 * @param pos the position to be assigned to the object
-	 * @param rk the rank to be assigned to the object
-	 * @param spe the species to be assigned to the object
-	 * @param assign the assignment to be assigned to the object
+	 * @param nm the value to be assigned to the object name attribute
+	 * @param pos the value to be assigned to the object position attribute
+	 * @param rk the value to be assigned to the object rank attribute
+	 * @param spe the value to be assigned to the object species attribute
+	 * @param assign the value to be assigned to the object assignment attribute
 	 */
 	public CrewMember(String nm, String pos, String rk, String spe, String assign) {
 		this.name = nm;
@@ -51,7 +51,7 @@ public class CrewMember {
 	}
 	
 	/**
-	 * Returns the CrewMember class name attribute
+	 * Returns the CrewMember object name attribute
 	 * 
 	 * @return the string type name attribute for the CrewMember object
 	 */
@@ -60,7 +60,7 @@ public class CrewMember {
 	}
 	
 	/**
-	 * Returns the CrewMember class position attribute
+	 * Returns the CrewMember object position attribute
 	 * 
 	 * @return the string type position attribute for the CrewMember object
 	 */
@@ -69,7 +69,7 @@ public class CrewMember {
 	}
 	
 	/**
-	 * Returns the CrewMember class rank attribute
+	 * Returns the CrewMember object rank attribute
 	 * 
 	 * @return the string type rank attribute for the CrewMember object
 	 */
@@ -78,7 +78,7 @@ public class CrewMember {
 	}
 	
 	/**
-	 * Returns the CrewMember class species attribute
+	 * Returns the CrewMember object species attribute
 	 * 
 	 * @return the string type species attribute for the CrewMember object
 	 */
@@ -87,7 +87,7 @@ public class CrewMember {
 	}
 	
 	/**
-	 * Returns the CrewMember class assignment attribute
+	 * Returns the CrewMember object assignment attribute
 	 * 
 	 * @return the string type assignment attribute for the CrewMember object
 	 */
