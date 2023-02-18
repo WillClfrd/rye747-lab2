@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class Fleet {
 	private String name;
-	public ArrayList<Starship> fleet;
+	private ArrayList<Starship> fleet;
 	
 	/**
 	 * Constructs a Fleet object with a given name. 
@@ -78,7 +78,7 @@ public class Fleet {
 				while(read.hasNextLine()) {
 					lineIn = read.nextLine();
 					tokens = lineIn.split(",");
-					parseData(tokens, n);
+					assignData(tokens, n);
 					++n;
 				}
 				read.close();
@@ -96,7 +96,7 @@ public class Fleet {
 	 * @param tokens array of strings obtained by using split method on read in data from loadStarships method. Used to create either Starship or CrewMember objects
 	 * @param state integer used to determine what object to create
 	 */
-	private void parseData(String[] tokens, int state) {
+	private void assignData(String[] tokens, int state) {
 		switch(state) {
 			case 0:
 				Starship tempShip = new Starship(tokens[0], tokens[1], tokens[2]);
